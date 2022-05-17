@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #ebebeb;
+}
+/* logo */
+#logo{
+    background-color: #ebebeb;
+}
+.logo{
+    width: 275px;
+    height: 75px;
+}
+/* bordes */
+.bordertop{
+    border-bottom:rgb(rgb(66, 66, 66));
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+.borderbot{
+    border-top:rgb(rgb(66, 66, 66));
+    border-top-style: solid;
+    border-top-width: 3px;
+}
+/* Menu */
+#menu{
+    overflow: hidden; /*hidden solo visualiza el texto en la caja de menú*/
+    list-style: none;
+}
+#menu li>a{
+    background-color: none;
+    color: black;
+    font-size: 18px ;
+    margin: 2px;
+    padding: 20px;
+    display: list-item;
+    text-decoration: none;
+    list-style: none;
+
+}
+#menu li>a:hover /*pasado de mouse*/{
+    color: blue;
+}
+#menu>li{
+    float: right; /*define la posición del menú flotante*/
+    text-align: right;
+    justify-content: center;
+}
+
+/* Imágenes */
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+.cover{
+   width: 100%;
+   height: 300px;
+   background-image: url(img/edificio.jpg);
+   background-repeat: no-repeat;
+   background-size:100% 25em;
+   background-position: center center;
+   display: grid;
+}
+.vision{
+    background-image:url(img/costaverde.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: scroll; 
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px;
+}
+.headercenter {
+    font-size: 2;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2;
+    align-items: center;
+}
+.headercenter::before,
+.headercenter::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+    color: white; /*changes the color of the line */
+}
+/* texto */
+h1{
+    text-align: center;
+    font-size: 28pt;
+    font-family: 'Georgia';
+    font-weight: 600;
+    font-style:normal;
+}
+h4{
+    position: relative;
+    font-family: Georgia;
+    top: 0px;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    text-shadow:1px 5px 7px black;
+}
+
+p{
+    font-family: 'Mako', sans-serif;
+    color: black;
+    letter-spacing:  -0.3px;
+    text-align: left;
+    margin: 20px;
+    font-size: 17px;
+}
+li{
+    font-family: 'Mako', sans-serif;
+    display: list-item;
+    margin-bottom: 5px;
+}
+i{
+    position: relative;
+    left: 40%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}   
+/* Columnnas */
+[class*="col"]{
+    width: 33%;
+    float: left;
+    margin: 0;
+    border-right:1px solid black;
+}
+.loc{
+    width: 20%;
+    float: left;
+}
+.credits{
+    width: 100%;
+    float: left;
+    margin: 0;
+}

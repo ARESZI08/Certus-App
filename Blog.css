@@ -1,0 +1,123 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+#more {
+    display: none;
+}  
+h1{
+    text-align: center;
+}
+#menu{
+    overflow: hidden; /*hidden solo visualiza el texto en la caja de menú*/
+    list-style: none;
+}
+li{
+    font-family: 'Mako', sans-serif;
+    display: list-item;
+}
+i{
+    position: relative;
+    left: 40%;
+    color: black;
+}
+#menu li>a{
+    background-color: transparent;
+    color: black;
+    font-size: 18px ;
+    margin: 2px;
+    padding: 20px;
+    display: list-item;
+    text-decoration: none;
+    list-style: none;
+}
+#menu li>a:hover /*pasado de mouse*/{
+    color: blue;
+}
+#menu>li{
+    float: right; /*define la posición del menú flotante*/
+    text-align: right;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: gray;
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.container  .card{
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: gray;
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+    border: 2px solid ;
+}
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: grey;
+}
+
+.container .card img{
+    width: 100%;
+    height: 200px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+.bordertop{
+    border-bottom:rgb(rgb(66, 66, 66));
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+.borderbot{
+    border-top:rgb(rgb(66, 66, 66));
+    border-top-style: solid;
+    border-top-width: 3px;
+}
+[class*="col"]{
+    width: 33%;
+    float: left;
+    margin: 0;
+    border-right:1px solid black;
+}
+.loc{
+    width: 20%;
+    float: left;
+}
+.credits{
+    width: 100%;
+    float: left;
+    margin: 0;
+}

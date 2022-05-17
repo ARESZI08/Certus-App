@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #ebebeb;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+}
+.video{
+
+    width:  100%;
+    height: -100%;
+}
+
+/*aqui empiezan las card*/
+p{
+    font-family: 'Mako', sans-serif;
+}
+i{
+    position: relative;
+    left: 40%;
+    color: black;
+}
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family:'Open Sans';
+    font-size: 3em;
+}
+
+h4{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 'open Sans';
+    text-align: center;
+    font-size: 1em;
+}
+ul{
+    position: fi;
+}
+.border{
+    border-bottom:rgb(rgb(66, 66, 66));
+    border-bottom-style: solid;
+    border-bottom-width: 4px ;
+}
+.warp{
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta-warp{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta{
+    width: 370px;
+    height: 370px;
+    background: rgb(66, 192, 250);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+    font-family:'Open Sans'
+}
+
+.adelante{
+    width: 100%;
+}
+
+.tarjeta-warp:hover .tarjeta{
+    transform: rotateY(180deg);
+}
+
+.card1{
+    background-image: url(img/Diseño\ 2.png);
+    background-size: cover;
+}
+.card2{
+    background-image: url(img/implementacion\ de\ fibra\ optica.png) ;
+    background-size: cover;
+}
+.card3{
+    background-image: url(img/cableado\ estructurado.png);
+    background-size: cover;
+}
+.card4{
+    background-image: url(img/empalmes\ y\ pruebas.png);
+    background-size: cover;
+}
+.card5{
+    background-image: url(img/Data\ center.png);
+    background-size: cover;
+}
+.card6{
+    background-image: url(img/obras.png);
+    background-size: cover;
+}
+/* Menu */
+#menu{
+    overflow: hidden; /*hidden solo visualiza el texto en la caja de menú*/
+    list-style: none;
+}
+li{
+    font-family: 'Mako', sans-serif;
+    display: list-item;
+}
+#menu li>a{
+    background-color: none;
+    color: black;
+    font-size: 18px ;
+    margin: 2px;
+    padding: 20px;
+    display: list-item;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+#menu li>a:hover /*pasado de mouse*/{
+    color: blue;
+}
+#menu>li{
+    float: right; /*define la posición del menú flotante*/
+    text-align: right;
+    justify-content: center;
+}
+[class*="col"]{
+    width: 33%;
+    float: left;
+    margin: 0;
+    border-right:1px solid black;
+}
+.loc{
+    width: 20%;
+    float: left;
+}
+.credits{
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+/* bordes */
+.bordertop{
+    border-bottom:rgb(rgb(66, 66, 66));
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+.borderbot{
+    border-top:rgb(rgb(66, 66, 66));
+    border-top-style: solid;
+    border-top-width: 3px;
+}
